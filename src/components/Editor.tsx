@@ -49,7 +49,8 @@ export function Editor({ content, onChange, placeholder = '开始写笔记...' }
     },
     onUpdate: ({ editor }) => {
       onChange(editor.getHTML())
-    }
+    },
+    autofocus: 'end'
   }, [content])
 
   if (!editor) {
